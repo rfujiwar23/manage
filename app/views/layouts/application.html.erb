@@ -7,23 +7,24 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/97991812d7.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-      <h1>Manage Your Cats</h1>
+    <div class="logo">
+      <h1><img src="<%= asset_path('logo.png') %>" alt="manage your cats logo"></h1>
+    </div>
     <%= yield %>
-  <div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-  </div>
-</div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        <i class="fas fa-heart"></i> Created by Ryo Fujiwara
+      </div>
+    </div>
 
   </body>
 
