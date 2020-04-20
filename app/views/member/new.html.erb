@@ -1,0 +1,10 @@
+<h1>New Member</h1>
+
+<p>Create a Member</p>
+
+<p>Name:</p>
+<%= form_with model: @article, class: "nifty_form" do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body, size: "60x12" %>
+  <%= f.submit "Create" %>
+<% end %>
