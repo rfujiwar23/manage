@@ -8,7 +8,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 250px 0;
+  padding: 200px 0;
 }
 
 .banner h1 {
@@ -45,23 +45,13 @@
   color: white;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
 
 .wrapper {
   // background: #BFC7F2;
    h1 {
     text-align: center;
+    margin-top:20px;
   }
   .information-card {
 
@@ -87,6 +77,8 @@
     margin-right:auto;
   }
 }
+
+
 
 
 // Footer
