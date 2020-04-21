@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'contact', to: "pages#contact"
 
   resources :member
+  resources :chart
 end
