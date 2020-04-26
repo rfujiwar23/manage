@@ -15,10 +15,13 @@
   <body>
     <div class="logo">
       <h1><img src="<%= asset_path('logo.png') %>" alt="manage your cats logo"></h1>
-
-
-
     </div>
+      <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+      <% end %>
+      <% if flash[:alert] %>
+      <p><%= flash[:alert] %></p>
+      <% end %>
     <%= yield %>
     <div class="footer">
       <div class="footer-links">
